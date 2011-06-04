@@ -1,0 +1,12 @@
+Really simple HTTP to OSC python script. 
+
+Starts HTTP server, serves files or parses querystring from requests to '/send-osc/'. Based on key/value pair from querystring sends OSC messages.
+
+I wrote it for one project where multiple mobile devices opened html page with quiz, answers were send by ajax requests to server and then from server via OSC to quartz composer on mac which was rendering quiz application with Q&A.
+
+Depends on pyliblo (http://das.nasophon.de/pyliblo/). For usage type:
+$ python server.py -h
+
+There is also example index.html for testing.
+
+
